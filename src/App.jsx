@@ -2,14 +2,14 @@ import iconStar from "./assets/icon-star.svg"
 
 export function App() {
   return (
-  <div>
+  <div className="bg-gradient-dark text-white mx-6 p-6">
     <div>
       <img src={iconStar} alt="icon star" />
     </div>
 
     <h1>How didi we do?</h1>
 
-    <p>Conte-nos como foi nossa ajuda com sua solicitação. Agradecemos muito seu feedback para podermos melhorar nosso atendimento!</p>
+    <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
 
     <div>
       <input type="button" value={1} />

@@ -7,9 +7,7 @@ export function App() {
   const [submited, setSubmited] = useState(false)
 
 
-  function handleMudarNotaAvaliacao(nota){
-    setNotaAvaliacao(nota)
-  }
+  
 
   function handleSubmit() {
     if (notaAvaliacao !== 0) {
@@ -22,7 +20,7 @@ export function App() {
 
   return (
     submited === false ? (
-      <CardInicial handleMudarNotaAvaliacao={handleMudarNotaAvaliacao} handleSubmit={handleSubmit}/>
+      <CardInicial setNotaAvaliacao={setNotaAvaliacao} handleSubmit={handleSubmit}/>
     ) : (
       <CardFinal notaAvaliacao={notaAvaliacao} />
     )
